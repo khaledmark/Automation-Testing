@@ -33,7 +33,7 @@ email.send_keys("khaled@example.com")
 password = driver.find_element(By.NAME, "reg_passwd__")
 password.send_keys("Test@12345")
 
-# اختار يوم الميلاد من dropdown
+#Choose from dropdown
 day = driver.find_element(By.ID, "day")
 day.send_keys("5")
 
@@ -43,10 +43,10 @@ month.send_keys("Feb")
 year = driver.find_element(By.ID, "year")
 year.send_keys("1990")
 
-# اختار gender
+# Choose gender
 gender = driver.find_element(By.XPATH, "//input[@value='2']")
 gender.click()
 
-# (اختياري) تضغط زر Sign Up
+#Click sign Up
 sign_up = driver.find_element(By.NAME, "websubmit")
 sign_up.click()
